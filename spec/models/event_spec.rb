@@ -12,12 +12,12 @@ RSpec.describe Event, type: :model do
 
     context '引数がnilな時' do
       let(:user) { nil }
-      it { should be_falsey }
+      it { is_expected.to be_falsey }
     end
 
     context '#owner_idと引数の#idが同じ時' do
       let(:user) { double('user', id: event.id)}
-      it { should be_truthy }
+      it { is_expected.to be_truthy }
     end
   end
 end

@@ -20,4 +20,13 @@ https://github.com/thoughtbot/shoulda-matchers
 
 
 factory_girl_railsはrails5ではfactory_bot_railsと名前変更がある
+以下で置換すると便利（.bakのバックアップファイルも作られる）
+```zsh
+grep -l '置換対象の文字列' ./* | xargs sed -i.bak -e 's/置換対象の文字列/置換後の文字列/g'
+```
 
+```zsh
+bundle exec rspec **/*.rb --format documentation
+```
+参考
+https://qiita.com/ryouzi/items/de7336e6175530723b30
