@@ -1,24 +1,8 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+- Perfect_Ruby_on_Railsが4.1推奨でありますが、RoRの最新版は5.2(2018/04/22)なので5.2用書き換えました。
+- coffee script部分もjQueryに書き換えてあります。
 
-Things you may want to cover:
+jquery-ujs.jsの部分がrails5では`form_with`を使わなければならない？と感じました。
 
-* Ruby version
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
