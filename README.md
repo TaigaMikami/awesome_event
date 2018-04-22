@@ -15,3 +15,9 @@ config.include(Shoulda::Matchers::ActiveModel, type: :model)
 config.include(Shoulda::Matchers::ActiveRecord, type: :model)
 ```
 
+参考
+https://github.com/thoughtbot/shoulda-matchers
+
+
+factory_girl_railsはrails5ではfactory_bot_railsと名前変更がある
+
