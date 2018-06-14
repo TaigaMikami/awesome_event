@@ -12,7 +12,7 @@
 
 ActiveRecord::Schema.define(version: 2018_04_22_085247) do
 
-  create_table "events", force: :cascade do |t|
+  create_table "events", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.integer "owner_id"
     t.string "name", null: false
     t.string "place", null: false
@@ -25,9 +25,9 @@ ActiveRecord::Schema.define(version: 2018_04_22_085247) do
     t.index ["owner_id"], name: "index_events_on_owner_id"
   end
 
-  create_table "tickets", force: :cascade do |t|
-    t.integer "user_id"
-    t.integer "event_id", null: false
+  create_table "tickets", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
+    t.bigint "user_id"
+    t.bigint "event_id", null: false
     t.string "comment"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
@@ -37,7 +37,7 @@ ActiveRecord::Schema.define(version: 2018_04_22_085247) do
     t.index ["user_id"], name: "index_tickets_on_user_id"
   end
 
-  create_table "users", force: :cascade do |t|
+  create_table "users", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.string "provider", null: false
     t.string "uid", null: false
     t.string "nickname", null: false
